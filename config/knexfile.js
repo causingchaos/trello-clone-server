@@ -5,7 +5,7 @@ module.exports = {
       host: '127.0.0.1',
       user: 'justinberry',
       password: 'password',
-      dataase: 'trello_clone_server'
+      database: 'trello_clone_server'
     },
   },
   test: {
@@ -16,7 +16,10 @@ module.exports = {
       password: 'password',
       database: 'trello_clone_server_test',
       charset: 'utf8'
-    }
+    },
+    seeds: {
+      directory: "../seeds"
+    },
   },
   production: {
     client: 'pg',
