@@ -19,7 +19,6 @@ module.exports = function (app) {
       console.log('table does not exist');
       db.schema.createTable(tableName, table => {
         table.increments('id');
-      
         table.string('username').unique().notNullable();
         table.string('displayName').notNullable();
         table.string('password').notNullable();
