@@ -23,7 +23,6 @@ module.exports = function (app) {
         table.string('displayName').notNullable();
         table.string('password').notNullable();
         table.string('imageUrl').notNullable();
-            
       })
         .then(() => console.log(`Created ${tableName} table`))
         .catch(e => console.error(`Error creating ${tableName} table`, e));
