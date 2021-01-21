@@ -7,3 +7,8 @@ On Heroku, you need to remove this escaping, or else authentication will break
 
 
 $feathers g service
+Disable logic from models for table creation
+$knex migrate:make create-list
+Modify knex migration table
+Run migration 
+Seed (optional)
