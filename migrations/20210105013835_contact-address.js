@@ -6,7 +6,7 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  knex.schema.alterTable('contacts', function (table) {
+  return knex.schema.alterTable('contacts', function (table) {
     table.string('address',200).alter();
   });
 };
