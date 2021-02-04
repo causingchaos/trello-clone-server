@@ -12,3 +12,6 @@ $knex migrate:make create-list
 Modify knex migration table
 Run migration 
 Seed (optional)
+
+## Creating hooks on feathers services (express routes)
+
