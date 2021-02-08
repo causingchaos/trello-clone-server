@@ -4,6 +4,8 @@ exports.up = function(knex) {
     table.increments('id');
     table.string('text', 300);
     table.datetime('created_at');
+    table.integer('userId').unsigned();
+    table.foreign('userId').references('users.id');
     table.integer('boardId').unsigned();
     table.foreign('boardId').references('boards.id');
   });
