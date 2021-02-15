@@ -1,3 +1,4 @@
+
 {
   "host": "localhost",
   "port": 3030,
@@ -9,7 +10,7 @@
   "authentication": {
     "entity": "user",
     "service": "users",
-    "secret": "K+FyA6IiUBhc4x5/QRHTiofhWv8=",
+    "secret": "AUTH_SECRET",
     "authStrategies": [
       "jwt",
       "local"
@@ -30,7 +31,7 @@
   },
   "postgres": {
     "client": "pg",
-    "connection": "postgres://postgres:@localhost:5432/trello_clone_server"
+    "connection": "PG_DB_URI"
   }
 }
 
