@@ -8,8 +8,7 @@ module.exports = {
   before: {
     all: [],
     find: [ ],
-    get: [ hashPassword('password'), 
-      authenticate('jwt'), 
+    get: [ authenticate('jwt'), hashPassword('password'),
     ],
     create: [ hashPassword('password') ],
     update: [ hashPassword('password'),  authenticate('jwt') ],
