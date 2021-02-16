@@ -29,6 +29,7 @@ module.exports = {
       database: process.env.DATABASE_DATABASE,
       user: process.env.DATABASE_USERNAME,
       password: process.env.DATABASE_ACCESS_KEY,
+      ssl: true,
     }
   }
 };
