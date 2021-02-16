@@ -31,7 +31,7 @@
   },
   "postgres": {
     "client": "pg",
-    "connection": "DATABASE_URL"
+    "connection": "postgres://postgres:@localhost:5432/trello_clone_server"
   }
 }
 
