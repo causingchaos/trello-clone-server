@@ -23,6 +23,11 @@ module.exports = {
   },
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL,
+    connection: {
+      host: 'ec2-35-171-57-132.compute-1.amazonaws.com',
+      user: 'emsmzulpvdlavl',
+      password: '5e82ee2fef739d7b82613dd4ca43ad899a5ec907a288dcab7ee31328e690d0e1',
+      database: 'de3bohplpdicso'
+    },
   }
 };

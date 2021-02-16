@@ -2,7 +2,9 @@ const knex = require('knex');
 const config = require('../config/knexfile.js');
 
 module.exports = function (app) {
+  
   const environment = process.env.NODE_ENV || 'development';
+  console.log(environment);
   // console.log('KNEX Server mode: ', environment);
 
   const environmentConfig = config[environment];
