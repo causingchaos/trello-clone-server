@@ -10,7 +10,7 @@ const configuration = require('@feathersjs/configuration');
 const express = require('@feathersjs/express');
 const socketio = require('@feathersjs/socketio');
 
-require('dotenv').config();
+require('dotenv').config()
 
 const middleware = require('./middleware');
 const services = require('./services');
